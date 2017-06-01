@@ -12,6 +12,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Timer;
@@ -19,12 +20,15 @@ import java.util.TimerTask;
 
 import home.smart.thuans.centraldevice.MainActivity;
 import home.smart.thuans.centraldevice.R;
+import home.smart.thuans.centraldevice.artificialBot.IntentConstant;
 import home.smart.thuans.centraldevice.device.ConnectedDevice;
 import home.smart.thuans.centraldevice.device.DeviceListAdapter;
 import home.smart.thuans.centraldevice.device.DeviceSQLite;
+import home.smart.thuans.centraldevice.house.CurrentBotContext;
 import home.smart.thuans.centraldevice.house.HouseConfig;
 import home.smart.thuans.centraldevice.http.CloudApi;
 import home.smart.thuans.centraldevice.http.RetroArduinoSigleton;
+import home.smart.thuans.centraldevice.utils.BotUtils;
 import home.smart.thuans.centraldevice.utils.DeviceConstant;
 import home.smart.thuans.centraldevice.utils.RetroFitSingleton;
 import okhttp3.ResponseBody;
@@ -60,31 +64,45 @@ public class CheckSensorService extends Service {
                 RetroArduinoSigleton retro = RetroArduinoSigleton.getInstance();
                 CloudApi cloudApi = retro.getCloudApi();
 
-                Call<ResponseBody> result = cloudApi.cbeckArduinoConnect();
-                result.enqueue(new Callback<ResponseBody>() {
-                    @Override
-                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                        try {
-                            String result = response.body().string();
-                            String[] attrib = result.split(",");
-                            for (int i=0; i < attrib.length; i++){
-                                String[] element = attrib[i].split(":");
-                                if (element.length>1) {
-                                    houseConfig.changeValueByPort(element[0], element[1]);
-                                }
-                            }
-                            sendBroadCastToMain();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
+                if (houseConfig.getDetectThiefMoment()!=null){
+                    long fromDetectTillNow = (new Date()).getTime() - houseConfig.getDetectThiefMoment().getTime();
+//                        Log.d(TAG,(fromDetectTillNow+ " diff time"));
+                    if (fromDetectTillNow > HouseConfig.DELAY_AUTO_PROTECT){
+                        ConnectedDevice alertBell = houseConfig.getDeviceByPort(DeviceConstant.ALERT_BELL_PORT);
+                        CurrentBotContext current = CurrentBotContext.getInstance();
+                        current.setDeviceTarget(alertBell);
+                        current.setDetected(BotUtils.findDetectByFunction(IntentConstant.TURN_OBJECT_ON));
+                        retro.turnObjectOn(alertBell, getApplicationContext());
                     }
 
-                    @Override
-                    public void onFailure(Call<ResponseBody> call, Throwable t) {
-                        Toast.makeText(CheckSensorService.this.getApplicationContext(),"Khong ket noi duoc",Toast.LENGTH_SHORT);
-                    }
-                });
-                Log.d(TAG,result.request().url().toString()+"  ----- send check");
+                } else {
+                    Call<ResponseBody> result = cloudApi.cbeckArduinoConnect();
+                    result.enqueue(new Callback<ResponseBody>() {
+                        @Override
+                        public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                            try {
+                                String result = response.body().string();
+                                String[] attrib = result.split(",");
+                                for (int i = 0; i < attrib.length; i++) {
+                                    String[] element = attrib[i].split(":");
+                                    if (element.length > 1) {
+                                        houseConfig.changeValueByPort(element[0], element[1]);
+                                    }
+                                }
+
+                                sendBroadCastToMain();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<ResponseBody> call, Throwable t) {
+                            Toast.makeText(CheckSensorService.this.getApplicationContext(), "Khong ket noi duoc", Toast.LENGTH_SHORT);
+                        }
+                    });
+                    Log.d(TAG, result.request().url().toString() + "  ----- send check");
+                }
             }
         }, 0, 4000);
     }

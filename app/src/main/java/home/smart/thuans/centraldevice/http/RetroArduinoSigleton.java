@@ -81,18 +81,18 @@ public class RetroArduinoSigleton {
     public void turnObjectOn(ConnectedDevice device, final Context context) {
         cloudApi = retrofit.create(CloudApi.class);
         Call<ResponseBody> sendCmd = cloudApi.sendCommand(device.getPort(),"on");
-        final ProgressDialog mWaitDialog =new ProgressDialog(context);
-        mWaitDialog .setMessage("Thực hiện lệnh....");
+//        final ProgressDialog mWaitDialog =new ProgressDialog(context);
+//        mWaitDialog .setMessage("Thực hiện lệnh....");
         sendCmd.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                mWaitDialog.dismiss();
+//                mWaitDialog.dismiss();
                 Log.d(TAG,"turn on bell success -----send command");
                 sendCommandResult(context, IntentConstant.SUCCESS_REPLY,"on");
             }
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-                mWaitDialog.dismiss();
+//                mWaitDialog.dismiss();
 //                sendCommandResult(context, IntentConstant.FAIL_REPLY,null);
 //                sendCommandResult(context, IntentConstant.FAIL_REPLY,"on");
 
@@ -101,7 +101,7 @@ public class RetroArduinoSigleton {
             }
         });
         Log.d(TAG,sendCmd.request().url().toString()+"-----send command");
-        mWaitDialog .show();
+//        mWaitDialog .show();
 
     }
 

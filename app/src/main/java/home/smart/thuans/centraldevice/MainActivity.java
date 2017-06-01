@@ -222,21 +222,7 @@ public class MainActivity extends Activity {
                         showReply(detectThiefSentence);
                         houseConfig.setDetectThiefMoment(new Date());
                     }
-                    if (houseConfig.getDetectThiefMoment()!=null){
-                        long fromDetectTillNow = (new Date()).getTime() - houseConfig.getDetectThiefMoment().getTime();
-//                        Log.d(TAG,(fromDetectTillNow+ " diff time"));
-                        if (fromDetectTillNow > HouseConfig.DELAY_AUTO_PROTECT){
-                            ConnectedDevice alertBell = houseConfig.getDeviceByPort(DeviceConstant.ALERT_BELL_PORT);
-                            CurrentBotContext current = CurrentBotContext.getInstance();
-                            current.setDeviceTarget(alertBell);
-                            current.setDetected(BotUtils.findDetectByFunction(IntentConstant.TURN_OBJECT_ON));
 
-                            RetroArduinoSigleton retroArduinoSigleton = RetroArduinoSigleton.getInstance();
-                            retroArduinoSigleton.turnObjectOn(alertBell, MainActivity.this);
-
-                        }
-
-                    }
                     sensorAdapter.notifyDataSetChanged();
                 } else if (messageSource.equals(RetroArduinoSigleton.COMMAND_RESULT_MESSAGE)){
                     String succOrFail = intent.getStringExtra(RetroArduinoSigleton.COMMAND_RESULT_TYPE);
