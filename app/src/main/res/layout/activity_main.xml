@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroudcolor"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="home.smart.thuans.centraldevice.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Camera Face detect"
+        android:textSize="24sp"
+        android:textColor="@color/colorGray"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <home.smart.thuans.centraldevice.utils.FaceView
+            android:id="@+id/faceView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/ovalcamera"
+            android:foregroundGravity="center" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/message_result"
+            android:layout_width="238dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@color/colorGray"
+            android:gravity="center"
+            android:text="..."
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0.18"
+        android:gravity="center"
+        android:textAlignment="inherit">
+
+        <Button
+            android:id="@+id/btn_config"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonboder"
+            android:text="Config"
+            android:textColor="@color/colorGray"
+            tools:layout_editor_absoluteX="298dp"
+            tools:layout_editor_absoluteY="448dp" />
+
+        <Button
+            android:id="@+id/btn_start_camera"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttonboder"
+            android:text="Start"
+            android:textColor="@color/colorGray"
+            tools:layout_editor_absoluteX="298dp"
+            tools:layout_editor_absoluteY="448dp" />
+
+        <Button
+            android:id="@+id/btn_start_voice"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttonboder"
+            android:text="Voice"
+            android:textColor="@color/colorGray"
+            tools:layout_editor_absoluteX="298dp"
+            tools:layout_editor_absoluteY="448dp" />
+
+        <Button
+            android:id="@+id/btn_stop_camera"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttonboder"
+            android:text="Stop"
+            android:textColor="@color/colorGray"
+            tools:layout_editor_absoluteX="298dp"
+            tools:layout_editor_absoluteY="448dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstDeviceStatus"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp" />
+
+
+</LinearLayout>

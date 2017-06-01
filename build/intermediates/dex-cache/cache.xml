@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\e2d6b6022bc8b2e9922417f8655820c43d145539\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_e0b3e4d55ee8801d6dedc2c69f9083494e59a230.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\6e68981cf790e75101f4d514bf0a1fc6e943319d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_dedb89dfe7577af54fa69c719cc55628dbadf864.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\ed12799700f71e4a38353b84daab430e0786ceeb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_359e3a0a3a77b7307931b687be7b16f6b7293471.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\gson-2.7_7d40265181679b9fa5baba0428c4cbe3643e23a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Source\android\CentralDevice\smartExtensionUtils\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d09837cf035b5db5e706e40502177e1bd5e97e6">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_4576e327faf274c363819c69526b2d43423bbedd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Source\android\CentralDevice\smartExtensionAPI\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bbba82d2be3798c99c91c558b1a61501b2b406f1">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_752ed0777be04d15840a253ae4be361e643b5afa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\retrofit-2.1.0_0b062043bcf26484056a2bd6ef87bd83b8e0aa78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\f06a7051aca7aff715541a118eb7cf62fa9a2daf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_f491310360e2e980b4854c8d8a49134339cf901a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\fea4ecd78d962fa75e71415fb699b34532d56956\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_d5f4cb38840b08586b07abc21422ea61a352de52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\de04f4c5781eef881cbb4b6130f1add3d842e6ff\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_147576cebe4d981494c0f079dd0028722a585555.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\0f2ff18512a2d3a0736a3ad6262730311b427c46\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_f528ac07159ad92bd9571e089fb81579e7be2a4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\okio-1.8.0_6a1b7ae22859ea103c96aaf9c0ae5c2c3ddc8bb9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-scalars\2.1.0\7c0d7c8f6e52115bb82fa018d81a8d0cae35dde5\converter-scalars-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7c0d7c8f6e52115bb82fa018d81a8d0cae35dde5">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\converter-scalars-2.1.0_ca98579ef8d4d63e6a60440c1535e4e3d30713ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\okhttp-3.3.0_23b5b28c3a4cd23fe25e24026ddfd490e9dacc50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\converter-gson-2.1.0_62393a3e76900dd168b37846d9f87d7eb03e09f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\20fd258e59b05f8955a4f4c8eb6d74d6a9b9bf66\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6825a79ca6c134dd6f26fc15eff443b5215dbdc">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_77ab9840a9776e63db578ed069e715a0fc8c58f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\08fb1b75716a6ce5c97381f3f573ff4641fb06e3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_7a279a6b69f0642b0946e38aee5b8b118a42cb32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\f8a1e86912cad1ffdfac11cad0038b5e7dafacbc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_5d47a3c34b4e9bde3db217fd2939169958a8fef4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Thuans\.android\build-cache\29ae1a773aa80f2a98e03306cbcf72c53f77b3e0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="D:\Source\android\CentralDevice\app\build\intermediates\pre-dexed\debug\classes_7cf9899e1ec4680449a628cfbcc03c6f221b3ed1.jar" />
+    </item>
+
+</items>

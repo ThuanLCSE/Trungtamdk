@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CentralDevice</string>
+    <string name="extension_name">smart house exten name</string>
+    <string name="btn_call_label">Gọi quản gia</string>
+</resources>
